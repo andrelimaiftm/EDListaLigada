@@ -21,8 +21,10 @@ public class ListaLigada {
             aux = aux.getProx();
             i++;
         }
+
         novoElemento.setProx(aux.getProx());
         aux.setProx(novoElemento);
+
 
     }
 
@@ -35,7 +37,13 @@ public class ListaLigada {
             i++;
         }
         //No temp = aux.getProx();
+
         aux.setProx((aux.getProx()).getProx());
+
+        if(aux.getProx() == null){
+            cauda = aux;
+        }
+
         //temp.setProx(null);
     }
     

@@ -9,7 +9,9 @@ public class App {
         novoElemento = new No("E", null);
         lista.adicionar(2, novoElemento);
         lista.imprimir();
-        lista.remove(2);
+        lista.remove(4);
+        lista.imprimir();
+        lista.adicionar(new No("Z", null));
         lista.imprimir();
 
     }
